@@ -1,0 +1,1 @@
+https://apii.online/Searchajax.php?query=${query}&page=${page}
