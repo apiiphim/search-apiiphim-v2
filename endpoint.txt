@@ -1,1 +1,2 @@
 https://apii.online/Searchajax.php?query=${query}&page=${page}
+Cấu hình bootstrap 5x
