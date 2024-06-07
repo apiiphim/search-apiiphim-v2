@@ -1,0 +1,30 @@
+      <header class="mb-4">
+        <div class="input-group mb-3">
+            <input type="text" id="searchbox" class="form-control"
+                placeholder="Nhập tên phim bạn muốn tìm kiếm...">
+            <button class="btn btn-dark" type="button" id="searchButton">
+                <i class="fa-light fa-magnifying-glass-play"></i>
+            </button>
+        </div>
+      </header>
+      <main>
+        <div id="hits" class="list-group" style="display: none;"></div>
+      </main>
+
+        <!-- Modal -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="searchModalLabel">Kết quả tìm kiếm</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="modal-hits" class="list-group"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="load-more-modal" class="btn btn-primary" onclick="loadMore(true)"><i class="fa-solid fa-loader"></i> Tải thêm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
